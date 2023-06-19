@@ -1,0 +1,41 @@
+<% for(var i = 0; i < items.length; i++) { %>
+<tr>
+    <td><%= items[i].service %></td>
+    <td><%= items[i].status %></td>
+    <td><%= items[i].country %></td>
+    <td><%= items[i].dc %></td>
+    <td><%= items[i].project %></td>
+    <td><%= items[i].sitetype %></td>
+    <td><%= items[i].environment %></td>
+    <td><%= items[i].cluster %></td>
+    <td><%= items[i].name %></td>
+    <td><%= items[i].hostname %></td>
+    <td><%= items[i].os_ip %></td>
+    <td><%= items[i].os_sm %></td>
+    <td><%= items[i].os_gw %></td>
+    <td><%= items[i].vlan_name %></td>
+    <td><%= items[i].vlan_id %></td>
+    <td><%= items[i].jump_server %></td>
+    <td><%= items[i].Vcpu %></td>
+    <td><%= items[i].ram %></td>
+    <td><%= items[i].hdd %></td>
+    <td><%= items[i].os_type %></td>
+    <td><%= items[i].os_version %></td>
+    <td><%= items[i].servercategory %></td>
+    <td><%= items[i].application %></td>
+    <td><%= items[i].application_team %></td>
+    <td><%= items[i].vm_backup %></td>
+    <td><%= items[i].vm_build_date %></td>
+    <td><%= items[i].comm_ticket %></td>
+    <td><%= items[i].vm_decommised_date %></td>
+    <td><%= items[i].decommised_ticket %></td>
+    <td>
+        <a href="/updateitem?id=<%=items[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<%} %>

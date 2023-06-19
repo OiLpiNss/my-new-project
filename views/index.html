@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">Inventory Management System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/additem" class="border-shadow">
+                  <span class="text-gradient">New Entry<i class="fa-sharp fa-solid fa-rectangle-history-circle-plus"></i></span>   
+                </a>
+            </div>
+            <form action="/"method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Service Type</th>
+                            <th>VM Status</th>
+                            <th>Country</th>
+                            <th>Data Center</th>
+                            <th>Project</th>
+                            <th>SiteType</th>
+                            <th>Environment</th>
+                            <th>Cluster/Virtual Host/Standalone</th>
+                            <th>VM_Name</th>
+                            <th>Host/DNSName</th>
+                            <th>OS_IP</th>
+                            <th>OS_SM</th>
+                            <th>OS_GW</th>
+                            <th>VLAN NAME</th>
+                            <th>VLAN ID</th>
+                            <th>Jump Server IP</th>
+                            <th>vCPU</th>
+                            <th>RAM_GB</th>
+                            <th>HDD_GB</th>
+                            <th>OS Type</th>
+                            <th>OS version</th>
+                            <th>Server Category</th>
+                            <th>Application</th>
+                            <th>Application Owner/Team</th>
+                            <th>VM_Backup</th>
+                            <th>VM Commissioned Date</th>
+                            <th>Commissioned Ticket</th>
+                            <th>VM Decommissioned Date</th>
+                            <th>Decommissioned Ticket</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>service</td>
+                            <td>status</td>
+                            <td>country</td>
+                            <td>dc</td>
+                            <td>project</td>
+                            <td>sitetype</td>
+                            <td>environment</td>
+                            <td>cluster</td>
+                            <td>name</td>
+                            <td>hostname</td>
+                            <td>os_ip</td>
+                            <td>os_sm</td>
+                            <td>os_gw</td>
+                            <td>vlan_name</td>
+                            <td>vlan_id</td>
+                            <td>jump_server</td>
+                            <td>Vcpu</td>
+                            <td>ram</td>
+                            <td>hdd</td>
+                            <td>os_type</td>
+                            <td>os_version</td>
+                            <td>servercategory</td>
+                            <td>application</td>
+                            <td>application_team</td>
+                            <td>vm_backup</td>
+                            <td>vm_build_date</td>
+                            <td>comm_ticket</td>
+                            <td>vm_decommised_date</td>
+                            <td>decommised_ticket</td>
+                            <td>
+                                <a href="#"class="btn border-shadow update">
+                                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                                </a>
+                                <a href="#"class="btn border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-times"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

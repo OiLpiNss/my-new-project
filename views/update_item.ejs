@@ -1,0 +1,146 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Items</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Item</h2>
+            <span class="text-dark">Use the below form update the existing entery</span>
+        </div>
+        <form method="POST" id="updateitem">
+            <div class="new_item">
+                <div class="form-group">
+                    <label for="service" class="text-dark">Service Type</label>
+                    <input type="text" name="service" value="<%= entry.service %>" >
+                </div>
+                <div class="form-group">
+                    <label for="status" class="text-dark">VM Status</label>
+                    <input type="text" name="status" value="<%= entry.status %>" >
+                </div>
+                <div class="form-group">
+                   <label for="country" class="text-dark">Country</label>
+                   <input type="text" name="country" value="<%= entry.country %>" >
+               </div>
+               <div class="form-group">
+                   <label for="dc" class="text-dark">Datacenter</label>
+                   <input type="text" name="dc" value="<%= entry.dc %>" >
+               </div>
+               <div class="form-group">
+                   <label for="project" class="text-dark">Project</label>
+                   <input type="text" name="project" value="<%= entry.project %>" >
+               </div>
+               <div class="form-group">
+                   <label for="sitetype" class="text-dark">SiteType</label>
+                   <input type="text" name="sitetype" value="<%= entry.sitetype %>" >
+               </div>
+               <div class="form-group">
+                   <label for="environment" class="text-dark">Environment</label>
+                   <input type="text" name="environment" value="<%= entry.environment %>" >
+               </div>
+               <div class="form-group">
+                   <label for="cluster" class="text-dark">Cluster/Virtual Host/Standalone</label>
+                   <input type="text" name="cluster" value="<%= entry.cluster %>" >
+               </div>
+               <div class="form-group">
+                   <label for="name" class="text-dark">VM_Name</label>
+                   <input type="text" name="name" value="<%= entry.name %>" >
+               </div>
+               <div class="form-group">
+                   <label for="hostname" class="text-dark">Host</label>
+                   <input type="text" name="hostname" value="<%= entry.hostname %>" >
+               </div>
+               <div class="form-group">
+                   <label for="os_ip" class="text-dark">OS_IP</label>
+                   <input type="text" name="os_ip" value="<%= entry.os_ip %>" >
+               </div>
+               <div class="form-group">
+                   <label for="os_sm" class="text-dark">OS_SM</label>
+                   <input type="text" name="os_sm" value="<%= entry.os_sm %>" >
+               </div>
+               <div class="form-group">
+                   <label for="os_gw" class="text-dark">OS_GW</label>
+                   <input type="text" name="os_gw" value="<%= entry.os_gw %>" >
+               </div>
+               <div class="form-group">
+                   <label for="vlan_name" class="text-dark">VLAN NAME</label>
+                   <input type="text" name="vlan_name" value="<%= entry.vlan_name %>" >
+               </div>
+               <div class="form-group">
+                   <label for="vlan_id" class="text-dark">VLAN ID</label>
+                   <input type="text" name="vlan_id" value="<%= entry.vlan_id %>" >
+               </div>
+               <div class="form-group">
+                   <label for="jump_server" class="text-dark">Jump Server IP</label>
+                   <input type="text" name="jump_server" value="<%= entry.jump_server %>" >
+               </div>
+               <div class="form-group">
+                   <label for="Vcpu" class="text-dark">vCPU</label>
+                   <input type="text" name="Vcpu" value="<%= entry.Vcpu %>" >
+               </div>
+               <div class="form-group">
+                   <label for="ram" class="text-dark">RAM_GB</label>
+                   <input type="text" name="ram" value="<%= entry.ram %>" >
+               </div>
+               <div class="form-group">
+                   <label for="hdd" class="text-dark">HDD_GB</label>
+                   <input type="text" name="hdd" value="<%= entry.hdd %>" >
+               </div>
+               <div class="form-group">
+                   <label for="os_type" class="text-dark">OS Type</label>
+                   <input type="text" name="os_type" value="<%= entry.os_type %>" >
+               </div>
+               <div class="form-group">
+                   <label for="os_version" class="text-dark">OS version</label>
+                   <input type="text" name="os_version" value="<%= entry.os_version %>" >
+               </div>
+               <div class="form-group">
+                   <label for="servercategory" class="text-dark">Server Category</label>
+                   <input type="text" name="servercategory" value="<%= entry.servercategory %>" >
+               </div>
+               <div class="form-group">
+                   <label for="application" class="text-dark">Application</label>
+                   <input type="text" name="application" value="<%= entry.application %>" >
+               </div>
+               <div class="form-group">
+                   <label for="application_team" class="text-dark">Application Owner/Team </label>
+                   <input type="text" name="application_team" value="<%= entry.application_team %>" >
+               </div>
+               <div class="form-group">
+                   <label for="vm_backup" class="text-dark">VM_Backup</label>
+                   <input type="text" name="vm_backup" value="<%= entry.vm_backup %>" >
+               </div>
+               <div class="form-group">
+                   <label for="vm_build_date" class="text-dark">VM Commissioned Date</label>
+                   <input type="text" name="vm_build_date" value="<%= entry.vm_build_date %>" >
+               </div>
+               <div class="form-group">
+                   <label for="comm_ticket" class="text-dark">Commissioned Ticket</label>
+                   <input type="text" name="comm_ticket" value="<%= entry.comm_ticket %>" >
+               </div>
+               <div class="form-group">
+                   <label for="vm_decommised_date" class="text-dark">VM Decommissioned Date</label>
+                   <input type="text" name="vm_decommised_date" value="<%= entry.vm_decommised_date %>" >
+               </div>
+               <div class="form-group">
+                   <label for="decommised_ticket" class="text-dark">Decommissioned Ticket</label>
+                   <input type="text" name="decommised_ticket" value="<%= entry.decommised_ticket %>" >
+               </div>
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                 </div>
+             </div>
+         </form>  
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
